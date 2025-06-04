@@ -12,18 +12,17 @@
   </head>
   <body>
     <div class="container">
+      <div class="step-label" id="step-label">Step 1 of 4</div>
       <div class="stepper">
         <div class="step active"></div>
+        <div class="step"></div>
         <div class="step"></div>
         <div class="step"></div>
       </div>
 
       <!-- Step 1 -->
       <div class="step-page active" id="step-1">
-        <h1>
-          Let’s find you some
-          <span class="suitable-highlight">suitable</span> cover
-        </h1>
+        <h1>Let’s find you some suitable health insurance</h1>
         <p class="subtitle">
           Answer a few quick questions to tailor your health insurance results.
         </p>
@@ -90,9 +89,10 @@
 
       <!-- Step 2 -->
       <div class="step-page" id="step-2">
-        <h1>What type of cover are you looking for?</h1>
+        <h1>What are you looking for from your health cover?</h1>
         <p class="subtitle">
-          We'll grab some quick details to tailor your quote.
+          Let us know if you have specific needs or if you’d like to view all
+          covers.
         </p>
         <form id="help-form">
           <div class="radio-section">
@@ -101,12 +101,10 @@
                 <input type="radio" name="help" value="personalised" required />
                 <span class="radio-card">
                   <span class="radio-card-content">
-                    <span class="radio-title"
-                      >Cover for unexpected illness</span
-                    >
+                    <span class="radio-title">I have specific needs</span>
                     <span class="radio-subtitle"
-                      >I want cover if I have an unexpected illness and need to
-                      stay in hospital.</span
+                      >Coverage for specific services—dental, optical or for tax
+                      purposes, etc.</span
                     >
                   </span>
                 </span>
@@ -115,23 +113,9 @@
                 <input type="radio" name="help" value="personalised" required />
                 <span class="radio-card">
                   <span class="radio-card-content">
-                    <span class="radio-title"
-                      >Cover for general health needs</span
-                    >
+                    <span class="radio-title">I’m not sure yet</span>
                     <span class="radio-subtitle"
-                      >I want cover for a wider range of health needs and
-                      unexpected illness.</span
-                    >
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="help" value="personalised" required />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">I'm not sure</span>
-                    <span class="radio-subtitle"
-                      >I want to see all cover options.</span
+                      >Show me all available cover types.</span
                     >
                   </span>
                 </span>
@@ -147,59 +131,102 @@
 
       <!-- Step 3 -->
       <div class="step-page" id="step-3">
-        <h1>About you</h1>
-        <p class="subtitle">
-          Tell us a bit about yourself to personalise your quote.
-        </p>
+        <h1>I’m looking for …</h1>
+        <p class="subtitle">Choose what best matches your needs.</p>
         <form id="about-form">
           <div class="radio-section">
-            <label class="radio-section-label" for="looking-for"
-              >I'm looking for</label
-            >
-            <select
-              id="looking-for"
-              name="looking-for"
-              class="input-field"
-              required
-            >
-              <option value="" disabled selected>Select an option</option>
-              <option value="hospital">Hospital cover</option>
-              <option value="extras">Extras cover</option>
-              <option value="combined">Combined hospital & extras</option>
-            </select>
-          </div>
-          <div class="radio-section">
-            <label class="radio-section-label" for="living-in">Living in</label>
-            <select
-              id="living-in"
-              name="living-in"
-              class="input-field"
-              required
-            >
-              <option value="" disabled selected>Select your state</option>
-              <option value="nsw">New South Wales</option>
-              <option value="vic">Victoria</option>
-              <option value="qld">Queensland</option>
-              <option value="wa">Western Australia</option>
-              <option value="sa">South Australia</option>
-              <option value="tas">Tasmania</option>
-              <option value="act">Australian Capital Territory</option>
-              <option value="nt">Northern Territory</option>
-            </select>
-          </div>
-          <div class="radio-section">
-            <label class="radio-section-label" for="age"
-              >What's your age?</label
-            >
-            <input
-              type="number"
-              id="age"
-              name="age"
-              class="input-field"
-              min="0"
-              max="120"
-              required
-            />
+            <div class="radio-group">
+              <label class="custom-radio">
+                <input
+                  type="radio"
+                  name="looking-for"
+                  value="hospital-extras"
+                  required
+                />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title">Hospital and Extras</span>
+                    <span class="radio-subtitle">
+                      A combined policy covering both in-patient services and
+                      ancillary benefits (dental, optical, physio).
+                    </span>
+                  </span>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="looking-for" value="hospital-only" />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title">Hospital only</span>
+                    <span class="radio-subtitle">
+                      Hospital cover without any extras benefits.
+                    </span>
+                  </span>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="looking-for" value="extras-only" />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title">Extras only</span>
+                    <span class="radio-subtitle">
+                      Cover for ancillary services such as dental, optical or
+                      physio (no hospital cover).
+                    </span>
+                  </span>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="looking-for" value="family-cover" />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title">Family cover</span>
+                    <span class="radio-subtitle">
+                      Plans suited to couples or families (no
+                      maternity/pregnancy).
+                    </span>
+                  </span>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="looking-for" value="tax-offset" />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title">Tax offset eligibility</span>
+                    <span class="radio-subtitle">
+                      Determine if private cover will reduce your Medicare Levy
+                      Surcharge.
+                    </span>
+                  </span>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input
+                  type="radio"
+                  name="looking-for"
+                  value="maternity-birth"
+                />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title">Maternity &amp; birth</span>
+                    <span class="radio-subtitle">
+                      Hospital cover for pregnancy, birth, and newborn services.
+                    </span>
+                  </span>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="looking-for" value="none" />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title">None of these</span>
+                    <span class="radio-subtitle">
+                      Show me the full range of options.
+                    </span>
+                  </span>
+                </span>
+              </label>
+            </div>
           </div>
           <div class="button-row">
             <button type="button" class="back-btn">Back</button>
@@ -209,12 +236,35 @@
       </div>
 
       <div class="step-page" id="step-4">
-        <h1>Which treatments are important to you?</h1>
+        <h1>Which inclusions are important to you?</h1>
         <p class="subtitle">
-          Select any treatments or services you want included in your cover.
+          Select any inclusions or services you want included in your cover.
         </p>
         <form id="treatments-form">
           <div class="radio-section">
+            <div class="search-bar">
+              <svg class="search-icon" viewBox="0 0 20 20">
+                <circle
+                  cx="9"
+                  cy="9"
+                  r="7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                />
+                <line
+                  x1="14.5"
+                  y1="14.5"
+                  x2="19"
+                  y2="19"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <input type="text" placeholder="Search inclusions..." />
+            </div>
+
             <div class="radio-group">
               <label class="custom-radio">
                 <input
