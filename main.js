@@ -77,24 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Step 3: About form
-  const aboutForm = document.getElementById("about-form");
-  if (aboutForm) {
-    aboutForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      showStep(3);
-    });
-
-    // Back button for step 3
-    const backBtn = aboutForm.querySelector(".back-btn");
-    if (backBtn) {
-      backBtn.addEventListener("click", function () {
-        showStep(1);
-      });
-    }
-  }
-
-  // Step 4: Treatments form
+  // Step 3: Treatments form (now the last step)
   const treatmentsForm = document.getElementById("treatments-form");
   if (treatmentsForm) {
     treatmentsForm.addEventListener("submit", function (e) {
@@ -102,11 +85,11 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Treatments submitted!");
     });
 
-    // Back button for step 4
+    // Back button for step 3
     const backBtn = treatmentsForm.querySelector(".back-btn");
     if (backBtn) {
       backBtn.addEventListener("click", function () {
-        showStep(2);
+        showStep(1);
       });
     }
   }
