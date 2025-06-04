@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jakarta+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="stepper">
+        <div class="step active"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="step-page active" id="step-1">
+        <h1>
+          Let’s find you some
+          <span class="suitable-highlight">suitable</span> cover
+        </h1>
+        <p class="subtitle">
+          Answer a few quick questions to tailor your health insurance results.
+        </p>
+        <form id="residency-form">
+          <div class="radio-section">
+            <label class="radio-section-label">What is your residency?</label>
+            <div class="radio-group">
+              <label class="custom-radio">
+                <input
+                  type="radio"
+                  name="residency"
+                  value="australian"
+                  required
+                />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title"
+                      >Australian resident or citizen</span
+                    >
+                    <span class="radio-subtitle"
+                      >You live in Australia permanently and hold Medicare
+                      eligibility.</span
+                    >
+                  </span>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input
+                  type="radio"
+                  name="residency"
+                  value="international-worker"
+                />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title">Overseas worker</span>
+                    <span class="radio-subtitle"
+                      >You're in Australia on a working visa and need cover that
+                      meets visa requirements.</span
+                    >
+                  </span>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input
+                  type="radio"
+                  name="residency"
+                  value="international-student"
+                />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title">Overseas student</span>
+                    <span class="radio-subtitle"
+                      >You're studying in Australia on a student visa and need
+                      OSHC (Overseas Student Health Cover).</span
+                    >
+                  </span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="continue-btn">Continue</button>
+        </form>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-page" id="step-2">
+        <h1>What type of cover are you looking for?</h1>
+        <p class="subtitle">
+          We'll grab some quick details to tailor your quote.
+        </p>
+        <form id="help-form">
+          <div class="radio-section">
+            <div class="radio-group">
+              <label class="custom-radio">
+                <input type="radio" name="help" value="personalised" required />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title"
+                      >Cover for unexpected illness</span
+                    >
+                    <span class="radio-subtitle"
+                      >I want cover if I have an unexpected illness and need to
+                      stay in hospital.</span
+                    >
+                  </span>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="help" value="personalised" required />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title"
+                      >Cover for general health needs</span
+                    >
+                    <span class="radio-subtitle"
+                      >I want cover for a wider range of health needs and
+                      unexpected illness.</span
+                    >
+                  </span>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="help" value="personalised" required />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title">I'm not sure</span>
+                    <span class="radio-subtitle"
+                      >I want to see all cover options.</span
+                    >
+                  </span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="button-row">
+            <button type="button" class="back-btn">Back</button>
+            <button type="submit" class="continue-btn">Continue</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-page" id="step-3">
+        <h1>About you</h1>
+        <p class="subtitle">
+          Tell us a bit about yourself to personalise your quote.
+        </p>
+        <form id="about-form">
+          <div class="radio-section">
+            <label class="radio-section-label" for="looking-for"
+              >I'm looking for</label
+            >
+            <select
+              id="looking-for"
+              name="looking-for"
+              class="input-field"
+              required
+            >
+              <option value="" disabled selected>Select an option</option>
+              <option value="hospital">Hospital cover</option>
+              <option value="extras">Extras cover</option>
+              <option value="combined">Combined hospital & extras</option>
+            </select>
+          </div>
+          <div class="radio-section">
+            <label class="radio-section-label" for="living-in">Living in</label>
+            <select
+              id="living-in"
+              name="living-in"
+              class="input-field"
+              required
+            >
+              <option value="" disabled selected>Select your state</option>
+              <option value="nsw">New South Wales</option>
+              <option value="vic">Victoria</option>
+              <option value="qld">Queensland</option>
+              <option value="wa">Western Australia</option>
+              <option value="sa">South Australia</option>
+              <option value="tas">Tasmania</option>
+              <option value="act">Australian Capital Territory</option>
+              <option value="nt">Northern Territory</option>
+            </select>
+          </div>
+          <div class="radio-section">
+            <label class="radio-section-label" for="age"
+              >What's your age?</label
+            >
+            <input
+              type="number"
+              id="age"
+              name="age"
+              class="input-field"
+              min="0"
+              max="120"
+              required
+            />
+          </div>
+          <div class="button-row">
+            <button type="button" class="back-btn">Back</button>
+            <button type="submit" class="continue-btn">Continue</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="step-page" id="step-4">
+        <h1>Which treatments are important to you?</h1>
+        <p class="subtitle">
+          Select any treatments or services you want included in your cover.
+        </p>
+        <form id="treatments-form">
+          <div class="radio-section">
+            <div class="radio-group">
+              <label class="custom-radio">
+                <input
+                  type="radio"
+                  name="treatment"
+                  value="gastrointestinal"
+                  required
+                />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title">Gastrointestinal endoscopy</span>
+                  </span>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="treatment" value="pregnancy" />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title">Pregnancy and birth</span>
+                  </span>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="treatment" value="gynaecology" />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title"
+                      >Gynaecology Joint reconstructions</span
+                    >
+                  </span>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input
+                  type="radio"
+                  name="treatment"
+                  value="bone-joint-muscle"
+                />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title">Bone, joint and muscle</span>
+                  </span>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="treatment" value="weight-loss" />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title">Weight loss surgery</span>
+                  </span>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="button-row">
+            <button type="button" class="back-btn">Back</button>
+            <button type="submit" class="continue-btn">Continue</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
