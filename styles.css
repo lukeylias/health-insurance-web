@@ -32,7 +32,7 @@ body {
 .container {
   width: 100%;
   max-width: 540px;
-  margin: 5rem auto 0 auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,7 +165,6 @@ form {
   font-weight: 600;
   margin-bottom: 0.75rem;
   color: var(--brand);
-  padding-left: 2px;
 }
 
 .input-field {
@@ -189,6 +188,21 @@ form {
   border-bottom: 2px solid var(--brand);
   outline: none;
   background: #f5f5f5;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.form-hint {
+  font-size: 0.98rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+  margin-top: 0.1rem;
+  font-family: "Buenos Aires", "Plus Jakarta Sans", Arial, sans-serif;
+  opacity: 0.85;
+  line-height: 1.4;
 }
 
 .continue-btn {

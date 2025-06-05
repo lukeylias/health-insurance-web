@@ -88,91 +88,21 @@
 
       <!-- Step 2 -->
       <div class="step-page" id="step-2">
-        <h1>What are you looking for from your health cover?</h1>
+        <h1>Would you like a personalised quote?</h1>
         <p class="subtitle">
-          This will help us figure out your best health insurance match. Just
-          pick one for now, you'll be able to compare all of our cover options
-          shortly.
+          Provide a few details to get an accurate price and see any eligible
+          discounts.
         </p>
         <form id="help-form">
           <div class="radio-section">
             <div class="radio-group">
               <label class="custom-radio">
-                <input type="radio" name="help" value="basics" required />
+                <input type="radio" name="help" value="personalised" required />
                 <span class="radio-card">
                   <span class="radio-card-content">
-                    <span class="radio-title">Just the basics</span>
+                    <span class="radio-title">Get a personalised quote</span>
                     <span class="radio-subtitle">
-                      When you want low-cost cover or need it for tax purposes.
-                    </span>
-                  </span>
-                </span>
-              </label>
-              <!-- <label class="custom-radio">
-                <input
-                  type="radio"
-                  name="help"
-                  value="pregnancy-birth"
-                  required
-                />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Pregnancy and Birth</span>
-                    <span class="radio-subtitle">
-                      Includes reproductive and assisted-services coverage.
-                    </span>
-                  </span>
-                </span>
-              </label> -->
-              <label class="custom-radio">
-                <input
-                  type="radio"
-                  name="help"
-                  value="popular-treatments"
-                  required
-                />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Popular treatments</span>
-                    <span class="radio-subtitle">
-                      Get covered for treatments people around your age often
-                      need.
-                    </span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input
-                  type="radio"
-                  name="help"
-                  value="peace-of-mind"
-                  required
-                />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Peace of mind</span>
-                    <span class="radio-subtitle">
-                      Comprehensive cover for most treatments.
-                    </span>
-                  </span>
-                </span>
-              </label>
-
-              <label class="custom-radio">
-                <input
-                  type="radio"
-                  name="help"
-                  value="specific-condition"
-                  required
-                />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title"
-                      >A specific condition or surgery</span
-                    >
-                    <span class="radio-subtitle">
-                      Get matched with our best cover for your condition or
-                      upcoming surgery.
+                      Accurate pricing and offers
                     </span>
                   </span>
                 </span>
@@ -181,7 +111,7 @@
                 <input type="radio" name="help" value="personalised" required />
                 <span class="radio-card">
                   <span class="radio-card-content">
-                    <span class="radio-title">I’m not sure yet</span>
+                    <span class="radio-title">No thanks</span>
                     <span class="radio-subtitle"
                       >Show me all available cover types.</span
                     >
@@ -199,243 +129,122 @@
       </div>
 
       <div class="step-page" id="step-3">
-        <h1>Which inclusions are important to you?</h1>
+        <h1>Let’s personalise your quote</h1>
         <p class="subtitle">
-          Select any inclusions or services you want included in your cover.
+          Just a few details and we’ll show you the most accurate price—and any
+          discounts you qualify for.
         </p>
-        <form id="treatments-form">
-          <div class="radio-section">
-            <div class="search-bar">
-              <svg class="search-icon" viewBox="0 0 20 20">
-                <circle
-                  cx="9"
-                  cy="9"
-                  r="7"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  fill="none"
-                />
-                <line
-                  x1="14.5"
-                  y1="14.5"
-                  x2="19"
-                  y2="19"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-              </svg>
-              <input type="text" placeholder="Search inclusions..." />
-            </div>
-
-            <div class="radio-group radio-group-grid">
-              <label class="custom-radio">
-                <input
-                  type="radio"
-                  name="treatment"
-                  value="appliances-prostheses-aids"
-                  required
-                />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title"
-                      >Appliances, Prostheses and Aids</span
-                    >
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="treatment" value="chiropractic" />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Chiropractic</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input
-                  type="radio"
-                  name="treatment"
-                  value="dietetics-nutrition"
-                />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Dietetics and Nutrition</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input
-                  type="radio"
-                  name="treatment"
-                  value="exercise-physiology"
-                />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Exercise Physiology</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="treatment" value="eye-therapy" />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Eye Therapy</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="treatment" value="general-dental" />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">General Dental</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input
-                  type="radio"
-                  name="treatment"
-                  value="healthy-living-programs"
-                />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Healthy Living Programs</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="treatment" value="hearing-aids" />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Hearing Aids</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input
-                  type="radio"
-                  name="treatment"
-                  value="major-dental-implants"
-                />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Major Dental and Implants</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input
-                  type="radio"
-                  name="treatment"
-                  value="natural-therapies"
-                />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Natural Therapies</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input
-                  type="radio"
-                  name="treatment"
-                  value="occupational-therapy"
-                />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Occupational Therapy</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="treatment" value="optical" />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Optical</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="treatment" value="orthodontics" />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Orthodontics</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="treatment" value="osteopathy" />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Osteopathy</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input
-                  type="radio"
-                  name="treatment"
-                  value="pharmaceuticals-non-pbs"
-                />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Pharmaceuticals (non PBS)</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="treatment" value="physiotherapy" />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Physiotherapy</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="treatment" value="podiatry" />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Podiatry</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="treatment" value="psychology" />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Psychology</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="treatment" value="remedial-massage" />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Remedial Massage</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="treatment" value="speech-therapy" />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Speech Therapy</span>
-                  </span>
-                </span>
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="treatment" value="urgent-ambulance" />
-                <span class="radio-card">
-                  <span class="radio-card-content">
-                    <span class="radio-title">Urgent Ambulance</span>
-                  </span>
-                </span>
-              </label>
-            </div>
+        <form id="about-form" autocomplete="off">
+          <!-- Full Name -->
+          <div class="form-section">
+            <label class="radio-section-label" for="full-name"
+              >First Name</label
+            >
+            <input
+              type="text"
+              id="full-name"
+              name="full-name"
+              class="input-field"
+              required
+              autocomplete="name"
+            />
           </div>
+
+          <!-- Date of Birth -->
+          <div class="form-section">
+            <label class="radio-section-label" for="dob">Date of Birth</label>
+            <div class="form-hint">Your age affects pricing and rebates.</div>
+            <input
+              type="date"
+              id="dob"
+              name="dob"
+              class="input-field"
+              placeholder="DD / MM / YYYY"
+              required
+              autocomplete="bday"
+            />
+          </div>
+
+          <!-- State -->
+          <div class="form-section">
+            <label class="radio-section-label" for="state">State</label>
+            <div class="form-hint">Rates vary by state.</div>
+            <select id="state" name="state" class="input-field" required>
+              <option value="" disabled selected>Select your state</option>
+              <option value="NSW">New South Wales</option>
+              <option value="VIC">Victoria</option>
+              <option value="QLD">Queensland</option>
+              <option value="WA">Western Australia</option>
+              <option value="SA">South Australia</option>
+              <option value="TAS">Tasmania</option>
+              <option value="ACT">Australian Capital Territory</option>
+              <option value="NT">Northern Territory</option>
+            </select>
+          </div>
+
+          <!-- Private Health Cover -->
+          <!-- <div class="form-section">
+            <label class="radio-section-label"
+              >Do you currently hold private health cover?</label
+            >
+            <div class="form-hint">
+              This helps us calculate any waiting‐period waivers.
+            </div>
+            <div class="radio-group">
+              <label class="custom-radio">
+                <input type="radio" name="has-cover" value="yes" required />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title">Yes</span>
+                  </span>
+                </span>
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="has-cover" value="no" required />
+                <span class="radio-card">
+                  <span class="radio-card-content">
+                    <span class="radio-title">No</span>
+                  </span>
+                </span>
+              </label>
+            </div>
+          </div> -->
+
+          <!-- Email Address (optional) -->
+          <div class="form-section">
+            <label class="radio-section-label" for="email"
+              >Email Address
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="input-field"
+              placeholder="name@example.com"
+              autocomplete="email"
+            />
+          </div>
+
+          <!-- Mobile Phone Number (optional) -->
+          <div class="form-section">
+            <label class="radio-section-label" for="mobile"
+              >Mobile Phone Number
+            </label>
+            <div class="form-hint">
+              If you’d like a quick text reminder or callback.
+            </div>
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              class="input-field"
+              placeholder="04 XX XXX XXX"
+              autocomplete="tel"
+              pattern="^0[4]\d{2}\s?\d{3}\s?\d{3}$"
+            />
+          </div>
+
           <div class="button-row">
-            <button type="button" class="back-btn">Back</button>
             <button type="submit" class="continue-btn">Continue</button>
           </div>
         </form>
