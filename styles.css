@@ -477,6 +477,26 @@ a {
   font-size: 0.85rem;
 }
 
+.form-hint-inline {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom: 24px;
+  color: #003b77;
+  margin-bottom: 1.1rem;
+  font-family: "Buenos Aires", "Plus Jakarta Sans", Arial, sans-serif;
+  opacity: 0.85;
+  gap: 0.45em;
+}
+
+.form-hint-inline .info-icon {
+  font-size: 1.1rem;
+  color: #003b77;
+  margin-right: 0.3em;
+  vertical-align: middle;
+}
+
 @media (max-width: 600px) {
   .radio-group-grid {
     display: flex;
