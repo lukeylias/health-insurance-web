@@ -497,6 +497,36 @@ a {
   vertical-align: middle;
 }
 
+.privacy-note {
+  font-size: 0.875rem; /* 14px */
+  color: #333;
+  background: transparent;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  line-height: 1.6;
+  font-family: "Buenos Aires", "Plus Jakarta Sans", Arial, sans-serif;
+  text-align: left;
+  font-weight: 400;
+  padding-bottom: 48px;
+}
+
+.privacy-note strong {
+  font-weight: 700;
+  color: #262626;
+}
+
+.privacy-link {
+  color: var(--brand, #144a38);
+  font-weight: 700;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.privacy-link:hover,
+.privacy-link:focus {
+  color: #003b77;
+}
+
 @media (max-width: 600px) {
   .radio-group-grid {
     display: flex;
