@@ -427,6 +427,56 @@ form {
   justify-content: center;
 }
 
+.eligibility-banner {
+  display: flex;
+  align-items: center;
+  background: #dae6d2;
+  color: #262626;
+  border-radius: 4px;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  font-family: "Buenos Aires", "Plus Jakarta Sans", Arial, sans-serif;
+  margin: 1.5rem 0;
+  gap: 0.5rem;
+  line-height: 1.4;
+}
+
+.eligibility-icon.material-icons {
+  font-size: 32px;
+  color: #144a38;
+  border-radius: 6px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eligibility-text strong {
+  color: #144a38;
+  font-weight: 700;
+}
+
+.eligibility-link {
+  color: #82e578;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.eligibility-link:hover,
+.eligibility-link:focus {
+  color: #fff;
+}
+
+a {
+  color: var(--brand);
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s;
+  font-family: "Buenos Aires", "Plus Jakarta Sans", Arial, sans-serif;
+  font-size: 0.85rem;
+}
+
 @media (max-width: 600px) {
   .radio-group-grid {
     display: flex;
